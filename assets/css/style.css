@@ -1,0 +1,78 @@
+body  {
+	font-family: 'Zilla Slab', serif;
+	font-size: 1.6em;
+	color: #282828;
+}
+
+
+
+#sidebar {
+	background-color: #333;
+	color: #e1e1e1;
+	height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    z-index: 1000;
+}
+
+#sidebar a{
+	color: rgba(225,225,225,.7);
+	transition: all ease .3s;
+}
+
+#sidebar a:hover, #sidebar a:focus{
+	text-decoration: none;
+	color: rgba(225,225,225,1);
+}
+
+#sidebar-content ul{
+	list-style-type: none;
+}
+
+#sidebar .fa{ text-align: center; margin-bottom: 5px;}
+
+#book-content {list-style-type: none;}
+
+.hide {display:none;}
+
+.cover-img {margin-top: 15px;}
+
+#sidebar a.active{color:#e1e1e1!important;}
+
+#book-content li{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#main a, #main a:visited{
+	color: #ec008c;
+}
+
+@media (max-width: 767px) { 
+	#sidebar ul {
+		
+		margin-left: -30px;
+	}
+	
+	#sidebar{
+		font-size: .9em;
+	}
+	
+}
+
+@media (max-width: 575px) {
+	#sidebar {
+		font-size: .6em;
+	}
+	#sidebar ul {
+		margin-left: -40px;
+	}	
+	
+	#sidebar ul li{
+		margin: 3px 0;
+	}
+}
